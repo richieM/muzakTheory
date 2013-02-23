@@ -1,5 +1,0 @@
-1. As a user, I want to be able to see what chords go along with what
-intervals on a scale.
-
-2. As a user, I want to be able to see scale inversions and the chords
-that go along with them.

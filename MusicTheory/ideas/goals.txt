@@ -1,0 +1,17 @@
+*Learn new scales
+	By seeing what chords go w them
+	by seeing the scale intervals
+	by seeing the chord progressions
+* Learn new chords
+	by seeing similar chords
+	by seeing the intervals
+	by seeing matching scales (within inversions)
+* Make new scales and chords
+	see the mathematical/interval ratios/relationships
+	by glueing together chords n modifying scales
+* Alternate guitar tunings
+	what tunings are optimized for certain chords n scales (open tunings)
+	possibly based on hand ergonomics
+	
+Other languages to program this in?
+Google Web Toolkit (GWT) thing, but how does that render GUIs?

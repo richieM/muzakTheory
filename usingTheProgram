@@ -21,7 +21,8 @@ G# = 8
 A = 9
 Bb = 10
 B = 11
-C = 12 = 0 = octave  
+C = 12 = 0 = octave 
+
 (Because there are 12 unique notes, you can think of Western dodecaphonic music as being modulus 12.)
 
 Let's define a Major Scale to have the notes {0,2,4,5,7,9,11}.  The numbers here represent the half-steps from the root note. 

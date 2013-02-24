@@ -1,6 +1,7 @@
 muzakTheory
 ===========
 
+
 Muzak Theory is a Java program designed to help you learn music theory by relating commonly used scales and chords.
 
 The program allows you to "cross-check" various scales and chords and tells you what chords you can play with what scales.  Its been really helpful for me in learning new scales and chords on guitar.

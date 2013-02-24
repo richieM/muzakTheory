@@ -3,6 +3,7 @@ package com.google.gwt.muzaktheorygwt.client;
 import java.util.ArrayList;
 import java.util.List;
 
+import structures.DodecaNote;
 import structures.Group;
 import toolBox.ModeMath;
 
@@ -73,7 +74,9 @@ public class ResultsPanel {
 
 	private TreeNode getModeNode(Group currentMode) {
 		TreeNode modeNode = new TreeNode(currentMode.getName());
-		modeNode.setTitle(currentMode.getModeValue() + ": " + currentMode.getNotes().toString());
+		
+		DodecaNote.setModeShift(currentMode.getModeValue());
+		modeNode.setTitle("Mode starting on " + currentMode.getModeValueText() + ": " + currentMode.getNotes().toString());
 		
 		List<TreeNode> amigoNodes = new ArrayList<TreeNode>();
 		
@@ -87,6 +90,8 @@ public class ResultsPanel {
 		
 		modeNode.setChildren(nodes);
 		
+		DodecaNote.setModeShift(0); // reset
+		
 		return modeNode;
 	}
 
@@ -95,6 +100,4 @@ public class ResultsPanel {
 		ModeMath.findGroupAmigos(this.scales, this.chords);
 		updateTree();
 	}
-	
-	// TODO table or what?!!?
 }

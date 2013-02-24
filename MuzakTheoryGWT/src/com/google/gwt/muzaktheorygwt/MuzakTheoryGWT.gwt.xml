@@ -8,7 +8,7 @@
 <module rename-to='muzaktheorygwt'>
   <!-- Inherit the core Web Toolkit stuff.                        -->
   <inherits name='com.google.gwt.user.User'/>
-   <inherits name='Theory'/>
+   <inherits name='MuzakTheory'/>
   <inherits name="com.smartgwt.SmartGwt"/>
    <inherits name="com.googlecode.gwtx.Java"> </inherits>
 

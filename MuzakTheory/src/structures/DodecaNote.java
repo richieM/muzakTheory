@@ -10,8 +10,9 @@ public enum DodecaNote {
 	 EFLAT("Eb"), E("E"), F("F"),
 	 FSHARP("F#"), G("G"), GSHARP("G#"),
 	 A("A"), BFLAT("Bb"), B("B"),
-	 NONE("Keep it abstract (half steps)");
+	 NONE("Numbers (half steps)");
 	
+	private static int modeShift;
 	private final String abbreviation;		
 	private static final Map<String, DodecaNote> lookup = new HashMap<String, DodecaNote>();
 	
@@ -34,12 +35,16 @@ public enum DodecaNote {
 		return abbreviation;
 	}
 	
-	public static String getNoteRepresentation(DodecaNote root, Note note) {
+	public static void setModeShift(int ms) {
+		modeShift = ms;
+	}
+	
+	public static String getNoteRepresentation(DodecaNote root, Note note) {		
 		if (root == DodecaNote.NONE) {
-			return note.getHalfStep() + "";
+			return note.getHalfStep() + modeShift + "";
 		} else {
 			int indexOfRoot = dodecaNotes.indexOf(root);
-			int indexOfNote = (indexOfRoot + note.getHalfStep()) % 12;
+			int indexOfNote = (indexOfRoot + modeShift + note.getHalfStep()) % 12;
 			return dodecaNotes.get(indexOfNote).getAbbreviation() + "";
 		}
 	}

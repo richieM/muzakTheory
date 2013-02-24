@@ -2,14 +2,13 @@ package structures;
 
 public class Note implements Comparable<Note> {
 	
-	private static DodecaNote root = DodecaNote.G;
+	private static DodecaNote root = DodecaNote.NONE;
 	
 	public static void setRootDodecaNote(DodecaNote rootNote) {
 		root = rootNote;
 	}
 	
 	int halfStep;
-	DodecaNote letterNote;
 	
 	public Note(int halfStep) {
 		this.halfStep = halfStep;
@@ -56,8 +55,16 @@ public class Note implements Comparable<Note> {
 		return true;
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public String toString() {
+		if (this.root == DodecaNote.NONE) {
+			return halfStep + "";
+		}
 		return DodecaNote.getNoteRepresentation(root, this);
+	}
+	
+	public static boolean areWeAbstract() {
+		return root == DodecaNote.NONE;
 	}
 }

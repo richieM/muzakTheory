@@ -56,7 +56,6 @@ public class ReadScalesAndChords {
 
 		data.add("Scale Major 0 2 4 5 7 9 11");
 		data.add("Scale Minor 0 2 3 5 7 9 10");
-		data.add("Scale Jewish 0 1 4 5 7 8 10");
 		data.add("Scale Hungarian_Gypsy 0 2 3 6 7 8 10");
 		data.add("Scale Hungarian_Minor 0 2 3 6 7 8 11");
 		data.add("Scale Hungarian_Major 0 3 4 6 7 9 10");
@@ -71,6 +70,7 @@ public class ReadScalesAndChords {
 		data.add("Scale Super_Locrian 0 1 3 4 6 8 10");
 		data.add("Scale Bop 0 2 4 5 7 8 9 11");
 		data.add("Scale Egyptian 0 2 5 7 10");
+		data.add("Scale Phrygian_Dominant 0 1 4 5 7 8 10");
 		data.add("Chord Major_Triad 0 4 7");
 		data.add("Chord Minor_Triad 0 3 7");
 		data.add("Chord Augmented_Triad 0 4 8");

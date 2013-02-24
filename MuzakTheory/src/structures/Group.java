@@ -47,6 +47,16 @@ public class Group {
 		return modeNoteValue;
 	}
 
+	public String getModeValueText() {
+		if (Note.areWeAbstract()) {
+			return (new Note(modeNoteValue)).toString();
+		} else {
+			return (new Note(0).toString());
+		}
+	}
+
+
+
 	public void setNotes(List<Note> notes) {
 		this.notes = notes;
 		if (modeNoteValue == 0) {
@@ -70,14 +80,14 @@ public class Group {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		
+
 		// prob a crazy stackOverflow
 		//result = prime * result + ((matchingGroups == null) ? 0 : matchingGroups.hashCode());
 		result = prime * result + modeNoteValue;
-		
+
 		//crazy stackOverflow
 		//result = prime * result + ((myModes == null) ? 0 : myModes.hashCode());
-		
+
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + ((notes == null) ? 0 : notes.hashCode());
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
@@ -87,7 +97,7 @@ public class Group {
 	public void addAnAmigo(Group amigo) {
 		amigos.add(amigo);
 	}
-	
+
 	public List<Group> getAmigos() {
 		return amigos;
 	}
@@ -109,7 +119,7 @@ public class Group {
 				return false;
 			}
 		} 
-		
+
 		if (modeNoteValue != other.modeNoteValue) {
 			return false;
 		}
@@ -118,7 +128,7 @@ public class Group {
 				return false;
 			}
 		} 
-		
+
 		if (name == null) {
 			if (other.name != null) {
 				return false;
@@ -142,7 +152,7 @@ public class Group {
 	void setMyModes(List<Group> modes) {
 		myModes = modes;
 	}
-	
+
 	public List<Group> getMyModes() {
 		return myModes;
 	}
@@ -180,15 +190,15 @@ public class Group {
 		String result = "";
 		result += "Group [type=" + type + ", name=" + name + ", modeNoteValue=" + modeNoteValue + 
 				", notes=" + notes + ", numberOfAmigos= " + amigos.size() + "]";
-		
-		
+
+
 		return result;
 	}
-	
+
 	public String fullAutoBiography() {
 		String result = "****";
 		result += this.toString() + "\n\n";
-		
+
 		for (Group currentMode : myModes) {
 			result += currentMode.getModeValue() + "\t" + currentMode.toString() + "\n";
 			for (Group currentAmigo : currentMode.getAmigos()) {
@@ -196,15 +206,15 @@ public class Group {
 			}
 			result += "\n";
 		}
-		
+
 		return result;
 	}
 
 	public void clearAmigos() {
 		amigos.clear();		
 	}
-	
-	
-	
-	
+
+
+
+
 }

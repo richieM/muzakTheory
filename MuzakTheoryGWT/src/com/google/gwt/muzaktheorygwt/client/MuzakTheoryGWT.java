@@ -24,8 +24,8 @@ public class MuzakTheoryGWT implements EntryPoint, PropertyChangeListener {
 	List<Group> scales = new ArrayList<Group>();
 	List<Group> chords = new ArrayList<Group>();
 
-	private GroupPanelManager scalesTableManager = new GroupPanelManager("Scaleszz");
-	private GroupPanelManager chordsTableManager = new GroupPanelManager("Chordssss");
+	private GroupPanelManager scalesTableManager = new GroupPanelManager("Scales");
+	private GroupPanelManager chordsTableManager = new GroupPanelManager("Chords");
 
 	private ResultsPanel resultsTableManager = new ResultsPanel("Matches");
 	

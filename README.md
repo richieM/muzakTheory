@@ -8,10 +8,10 @@ The program allows you to "cross-check" various scales and chords and tells you 
 
 Folders:
 
-MuzakTheory - contains core classes for the program.
-            - Scales and Chords are represented as Groups
-            - also contains Java Swing GUI code to run as a Java application (Java GUI not up-to-date)
+MuzakTheory * contains core classes for the program.
+            * Scales and Chords are represented as Groups
+            * also contains Java Swing GUI code to run as a Java application (Java GUI not up-to-date)
 
-MuzakTheoryGWT - contains Java classes for program to run in Google Web Toolkit via Google App Engine
-               - using SmartGWT for front-end http://code.google.com/p/smartgwt/downloads/list
-               - using GWTX for PropertyChange support http://code.google.com/p/gwtx/
+MuzakTheoryGWT * contains Java classes for program to run in Google Web Toolkit via Google App Engine
+               * using SmartGWT for front-end http://code.google.com/p/smartgwt/downloads/list
+               * using GWTX for PropertyChange support http://code.google.com/p/gwtx/

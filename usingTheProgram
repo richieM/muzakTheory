@@ -1,11 +1,14 @@
 Here's some basic music theory to make sense of the program:
 
-A scales is an ordered set of musical notes that are designed to be played in various sequences.  A chord is a set of notes (usually 3 or more) designed to be played simultaneously.
-
+A scales is an ordered set of musical notes that are designed to be played in various sequences.  
+A chord is a set of notes (usually 3 or more) designed to be played simultaneously.
+e
 Western music theory is dodecaphonic - meaning there are 12 notes in an octave. 
-C, C#, D, Eb, E, F, F#, G, G#, A, Bb, B makes 12, and then back to C to complete the octave. This is why there are 12 notes on a piano before the key pattern repeats.
+C, C#, D, Eb, E, F, F#, G, G#, A, Bb, B makes 12, and then back to C to complete the octave. 
+This is why there are 12 notes on a piano before the key pattern repeats.
 
-When I'm playing, I like to think of my root or home note as 0, so if I'm playing in the key of C, then C is my 0 note, or "root note".
+When I'm playing, I like to think of my root or home note as 0
+, so when playing in the key of C, then C is my 0 note, or "root note".
 
 So if C = 0 (my root note), then counting up half steps (a half step is just going up or down by one note)...
 
@@ -25,7 +28,8 @@ C = 12 = 0 = octave
 
 (Because there are 12 unique notes, you can think of Western dodecaphonic music as being modulus 12.)
 
-Let's define a Major Scale to have the notes {0,2,4,5,7,9,11}.  The numbers here represent the half-steps from the root note. 
+Let's define a Major Scale to have the notes {0,2,4,5,7,9,11}.  
+The numbers here represent the half-steps from the root note. 
 
 
 By this logic, a Major Scale in the key of C will be {C,D,E,F,G,A,B}. C is the 0 note, or root note, here.  It's also completely arbitrary, but in this case I chose C = 0.  Because the C Major Chord is defined to have the notes {0,4,7}, or {C,E,G},  then you can play C Major Chord with C Major Scale because they share the same notes,{0,4,7} or {C,E,G} -- depending on how you look at it.

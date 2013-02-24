@@ -1,0 +1,58 @@
+Here's some basic music theory to make sense of the program:
+
+A scales is an ordered set of musical notes that are designed to be played in various sequences.  
+A chord is a set of notes (usually 3 or more) designed to be played simultaneously.
+
+Western music theory is dodecaphonic - meaning there are 12 notes in an octave. 
+C, C#, D, Eb, E, F, F#, G, G#, A, Bb, B makes 12, and then back to C to complete the octave. 
+This is why there are 12 notes on a piano before the key pattern repeats.
+
+When I'm playing, I like to think of my root or home note as 0,
+so when playing in the key of C, then C is my 0 note, or "root note".
+
+So if C = 0 (my root note), then counting up half steps (a half step is just going up or down by one note)...
+
+C  = 0
+C# = 1
+D = 2
+Eb = 3
+E = 4
+F = 5
+F# = 6
+G = 7
+G# = 8
+A = 9
+Bb = 10
+B = 11
+C = 12 = 0 = octave 
+
+(Because there are 12 unique notes, you can think of Western dodecaphonic music as being modulus 12.)
+
+Let's define a Major Scale to have the notes {0,2,4,5,7,9,11}.  
+The numbers here represent the half-steps from the root note. 
+
+By this logic, a Major Scale in the key of C will be {C,D,E,F,G,A,B}. C is the 0 note, or root note, here.  
+It's also completely arbitrary, but in this case I chose C = 0.  
+Because the C Major Chord is defined to have the notes {0,4,7}, or {C,E,G},  
+then you can play C Major Chord with C Major Scale because they share the same notes,{0,4,7} or {C,E,G} 
+-- depending on how you look at it.
+
+Now imagine that you like the sound of the Minor Chord (which is {0,3,7}), 
+and you're wondering where to play it in the C Major Scale.  How can we do that?
+
+At this point we introduce the musical concept of modes.  
+Modes are effectively just looking at the same scale in a different way by shifting the root note. 
+So the Dorian (2nd) mode of the C Major Scale will start on the 2nd note of the C Major Scale (which is D), 
+and use the same notes.  
+ 
+If we start on D and use the same notes, we get {D,E,F,G,A,B,C}. 
+It is the same group of notes, but now D is the 0 or root note.  
+This group of notes can be written as as {0,2,3,5,7,9,10} when D = 0. 
+Notice how we talking about the same group of notes as before, but we shifted our home-note. 
+We are still talking about the same 7 notes C/D/E/F/G/A/B but we're looking at it differently through a shift.
+ 
+Now, we discover that the Minor Chord is {0,3,7} and the Dorian (2nd mode) {0,2,3,5,7,9,10} both share the same notes {0,3,7}, 
+which means we can play the D Minor Chord in the C Major Scale!!
+
+When you run the program, on the left is a selectable list of scales, and on the right is a selectable list of chords.  
+Select as many of each that you'd like, the the Scale/Chord relationships will be calculated for you.

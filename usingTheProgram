@@ -27,6 +27,7 @@ C = 12 = 0 = octave
 
 Let's define a Major Scale to have the notes {0,2,4,5,7,9,11}.  The numbers here represent the half-steps from the root note. 
 
+
 By this logic, a Major Scale in the key of C will be {C,D,E,F,G,A,B}. C is the 0 note, or root note, here.  It's also completely arbitrary, but in this case I chose C = 0.  Because the C Major Chord is defined to have the notes {0,4,7}, or {C,E,G},  then you can play C Major Chord with C Major Scale because they share the same notes,{0,4,7} or {C,E,G} -- depending on how you look at it.
 
 Now imagine that you like the sound of the Minor Chord (which is {0,3,7}), and you're wondering where to play it in the C Major Scale.  How can we do that?
